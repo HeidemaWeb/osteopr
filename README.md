@@ -1,2 +1,2 @@
 # osteopr
-Websie osteopathie delft
+Website osteopathie delft
