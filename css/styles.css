@@ -156,10 +156,11 @@ footer {
 	margin: 0;
 	padding: 0;
 	border-radius: 0;
+	background-color: transparent;
 }
 
 #page1 .osteoshort {
-	height: 100px;
+	height: 300px;
 	margin-top: 60px;
 }
 #page1 .osteoshort  {
@@ -167,7 +168,9 @@ footer {
 #page1 .osteoshort ul li {
 	font-size: 21px;
 }
-
+#page1 p {
+	padding-bottom: 50px;
+}
 
 #page2 {
 	width: 100%;
