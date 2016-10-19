@@ -1,25 +1,36 @@
 *{
-	
+
 }
 
-.container {
-	padding-left: 0;
-	padding-right: 0;
+body {
+	padding-top: 50px;
+	min-width: 320px;
 }
 
 a:hover {
 	text-decoration: none;
 }
 
-a {
-	color: #337ab7;
+
+ol, ul {
+	margin-top: 0;
 }
+
+.h1, h1 {
+    font-size: 2em;
+}
+.h3, h3 {
+    font-size: 20px;
+}
+
+.btn {
+}
+
+
 /*** HEADER ***/
 header {
-	padding-left: 15px;
-	padding-right: 15px;
-
-	border-bottom: 2px solid #337ab7;
+	border-bottom: 2px solid #7ea963;
+	background-color: #fff;
 }
 
 #header-nav {
@@ -41,7 +52,7 @@ header {
 }
 .navbar-brand h1 {
 	font-family: Arial;
-	color: ##337ab7;
+	color: #7ea963;
 	text-transform: uppercase;
 	font-weight: bold;
 	margin-top: 0;
@@ -56,33 +67,36 @@ header {
 	font-size: .7em;
 	font-weight: bold;
 	margin-top:15px;
-	color: #337ab7;
+	color: #7ea963;
 }
 .navbar-brand p span {
     vertical-align: middle;
 }
 
+
 /*** navbar button styling ***/
+.navbar-header{
+	padding-left: 15px;
+}
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-	border: 1px solid #337ab7;
+	border: 1px solid #7ea963;
 }
 .navbar-header button.navbar-toggle {
 	clear: both;
-	margin-top: -30px;
+	margin-top: -40px;
 }
 .navbar-default .navbar-nav>li>a {
-    color: #337ab7;
+    color: #7ea963;
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-    color: #337ab7;
-    background-color: #F7F7F7;
-    border-bottom: 2px solid #337ab7;
+    color: #7ea963;
+    border-bottom: 1px solid #7ea963;
 }
 
 #nav-list>li>a {
-	font-size: 1.0em;
+	font-size: 0.9em;
 	font-weight: bold;
-	color: #337ab7;
+	color: #7ea963;
 }
 #nav-list li a:hover {
 	-webkit-animation-name: navBorder;
@@ -91,22 +105,21 @@ header {
 	animation-name: navBorder;
 	animation-duration: .5s;
 	animation-iteration-count: 1;
-	border-bottom: 2px solid #337ab7;
-	background-color: #F7F7F7;
-	color: #337ab7;
+	border-bottom: 1px solid #7ea963;
+	color: #7ea963;
 }
 @-webkit-keyframes navBorder {
-	0% {border-bottom: 2px solid #FFF; background-color: #FFF;}
-	100% {border-bottom: 2px solid #337ab7; background-color: #F7F7F7}
+	0% {border-bottom: 1px solid #FFF;}
+	100% {border-bottom: 1px solid #7ea963; }
 }
 @keyframes navBorder {
-	0% {border-bottom: 2px solid #FFF; color: #777; background-color: #FFF;}
-	100% {border-bottom: 2px solid #337ab7; color: #337ab7; background-color: #F7F7F7;}
+	0% {border-bottom: 1px solid #FFF;}
+	100% {border-bottom: 1px solid #7ea963;}
 }
 
 /**** style to counter margin above first menu item in the header ****/
 #homeButtonNav	{
-	margin-top: -30px;
+	margin-top: -31px;
 }
 
 /*** END HEADER ***/
@@ -116,8 +129,8 @@ header {
 /*** Footer ***/
 
 footer {
-	padding-right: 15px;
-	padding-left: 15px;
+	/*padding-right: 15px;
+	padding-left: 15px;*/
 }
 
 .panel-footer {
@@ -126,6 +139,8 @@ footer {
 
 	padding-top: 40px;
 	padding-bottom: 40px;
+	padding-left: 0;
+	padding-right: 0;
 
 	border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
@@ -133,9 +148,6 @@ footer {
 .panel-footer ul li {
 	list-style-type: none;
 	margin-left: -40px
-}
-.panel-footer a {
-	font-style: none;
 }
 .panel-footer .row {
 	padding-bottom: 30px;
@@ -146,96 +158,251 @@ footer {
 }
 
 /**** Main content ****/
-
 .row {
 	margin-left: 0;
 	margin-right: 0;
 }
 
+.no-wrap {
+	white-space: nowrap;
+}
+
 .container .jumbotron {
 	margin: 0;
-	padding: 0;
 	border-radius: 0;
 	background-color: transparent;
 }
 
-#page1 .osteoshort {
-	height: 300px;
-	margin-top: 60px;
-}
-#page1 .osteoshort  {
-}
-#page1 .osteoshort ul li {
-	font-size: 21px;
-}
-#page1 p {
-	padding-bottom: 50px;
+.container .jumbotron content {
+	margin-top: 100px;
 }
 
-#page2 {
+.container .jumbotron h1 {
+	font-size: 35px;
+}
+
+.download {
+	color: #7ea963;
+	font-weight: bold;
+}
+.download:hover {
+	color: #7ea963;
+	font-weight: bold
+}
+
+.reroute{
+	padding: 15px;
+}
+
+/******** page-over css ********/
+#page-over {
+
+}
+
+
+
+/******** page contactform css ********/
+#page-contact {
+	/*background: url("../images/background02_1600px.jpg") 50% no-repeat;*/
+}
+#contactForm {
+	border: 1px solid #FFF;
+	min-height: 400px;
+}
+input, textarea {
+		text-align: left;
+		margin: 0 0 20px 0;
+    padding: 9px;
+    border: solid 1px #E5E5E5;
+    outline: 0;
+    font: normal 13px/100% Verdana, Tahoma, sans-serif;
+    width: 100%;
+    background: #FFFFFF url('bg_form.png') left top repeat-x;
+    background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));
+    background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
+    box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+    -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+    -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+    }
+
+textarea {
+    width: 400px;
+    max-width: 400px;
+    height: 150px;
+    line-height: 150%;
+    }
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+    border-color: #C9C9C9;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
+    }
+
+.form label {
+    margin-left: 10px;
+    color: #999999;
+    }
+
+.submit input {
+    width: auto;
+    padding: 9px 15px;
+    background: #617798;
+    border: 0;
+    font-size: 14px;
+    color: #FFFFFF;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    }
+		.berichtInvoer {
+			width: 100%;
+			height: 250px;
+		}
+#map {
 	width: 100%;
-}
-#page2 section {
-	min-height: 100px;
-	padding: 5px;
-	background-color: #ddd;
+	height: 250px;
 }
 
-#page3 section {
-	min-height: 120px;
-	padding: 5px;
-	background-color: #EEE;
-}
+
 
 /******** media queries *****/
 
 /*** large devices ***/
 @media (min-width: 1200px) {
+	body {
+		padding-top: 148px;
+	}
+	#logo-img {
+		background: url('../images/logo-large.jpg') no-repeat;
+		width: 100px;
+		height: 100px;
+		margin: 23px 15px 5px 0;
+	}
+	#home-page-content {
+		background: url('../images/background1600.jpg') 50% no-repeat;
+	}
+	#page-over {
+		background: url('../images/background03-gr-long.png') 50% no-repeat;
+	}
+	#page-contact {
+		background: url("../images/background02_1600px.jpg") 50% no-repeat;
+	}
+	.main-content {
+		padding-bottom: 25px;
+	}
 	.jumbotron {
-		background: url('../images/osteopathie/background1920.jpg') 50% no-repeat;
 		width: 100%;
-		height: 600px;
+	}
+	.reroute {
+		height: 200px;
+	}
+	.h1, h1 {
+    	margin-left: 0;
+	}
+	form {
+		margin-left: 15px;
 	}
 }
 
 
 /*** medium devices ***/
 @media (min-width: 992px) and (max-width: 1199px) {
+	body {
+		padding-top: 129px;
+	}
 	#logo-img {
-		background: url('../images/');
+		background: url('../images/logo-medium.jpg');
 		width: 80px;
 		height: 80px;
 		margin: 23px 15px 5px 0;
-		background-color: #ddd;
 	}
 	#header-nav {
 		min-height: 100px;
 	}
+	#home-page-content {
+		background: url('../images/background1200.jpg') 50% no-repeat;
+	}
+	#page-over {
+		background: url('../images/background03-gr-long.png') 50% no-repeat;
+	}
+	#page-contact {
+		background: url("../images/background02_1200px.jpg") 50% no-repeat;
+	}
+	.main-content {
+		padding-bottom: 25px;
+	}
 	.jumbotron {
-		background: url('../images/osteopathie/background1200.jpg') no-repeat;
 		width: 100%;
-		height: 550px;
+	}
+	.reroute {
+	height: 225px;
+	}
+	.h1, h1 {
+    	margin-left: 0;
+	}
+	form {
+		margin-left: 15px;
 	}
 }
 
 /*** small devices ***/
 @media (min-width: 768px) and (max-width: 991px) {
+	body {
+		padding-top: 120px;
+	}
 	#header-nav {
 		min-height: 100px;
 	}
+	.navbar-brand h1{
+		font-size: 30px;
+	}
+	#home-page-content {
+		background: url('../images/background992.jpg') 50% no-repeat;
+	}
+	#page-over {
+		background: url('../images/background03-gr-long.png') 50% no-repeat;
+	}
+	#page-contact {
+		background: url("../images/background02_1600px.jpg") 50% no-repeat;
+	}
+	#logo-img {
+	background: url('../images/logo-sm.jpg') no-repeat;
+	width: 60px;
+	height: 60px;
+	margin: 24px 15px 10px 0px;
+}
 	.jumbotron {
-		background: url('../images/osteopathie/background992.jpg') no-repeat;
 		width: 100%;
-		height: 500px;
+	}
+	.main-content {
+		padding-bottom: 25px;
+	}
+	.reroute {
+	height: 240px;
+	}
+	.h1, h1 {
+    	margin-left: 0;
 	}
 }
 
+@media (min:width: 768px) {
+	body {
+		padding-top: 100px;
+		min-width: 320px;
+	}
+}
 /*** extra small devices ***/
 @media (max-width: 767px) {
+	body {
+		padding-top: 110px;
+		min-width: 320px;
+	}
+
 	/*Header*/
 	header {
-		border: 0px solid;
 	}
+	.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+    padding: 0 15px;
+}
 	.navbar-nav>li>a {
 	    line-height: 40px;
 	}
@@ -253,19 +420,41 @@ footer {
 		font-weight: bold;
 		margin-top: 12px;
 	}
-	#page1 {
-		background: url('../images/osteopathie/background768.jpg') no-repeat;
-		height: 400px;
+	.main-content {
+		padding-bottom: 25px;
+	}
+
+	#logo-img {
+	background: url('../images/logo-sm.jpg') no-repeat;
+	width: 60px;
+	height: 60px;
+	margin: 24px 15px 10px 15px;
+	}
+	.reroute {
+		height: 200px;
+	}
+	.h1, h1 {
+    font-size: 4vw;
+    font-weight: none;
 	}
 }
 
-
-
-
-
-
-
-
-
-
-
+@media (max-width: 551px) {
+	body {
+		padding-top: 110px;
+		min-width: 320px;
+	}
+	.h1, h1 {
+    font-size: 4vw;
+    font-weight: bold;
+	}
+	p {
+		color: #4b4b4b;
+	}
+	.jumbotron h1 {
+		color: #4b4b4b;
+	}
+	#home-page-content {
+		background-image: none;
+	}
+}

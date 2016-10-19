@@ -10,20 +10,20 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
-	<!-- Header scetion -->
-	<header>
-		<nav id="header-nav" class="navbar navbar-default">
+	<!-- Header section -->
+	<header class="navbar-fixed-top">
+		<nav id="header-nav" class="navbar navbar-default ">
 			<div class="container">
 				<div class="navbar-header">
-					<a href="index.html" class="pull-left visible-md visible-lg">
+					<a href="index.html" class="pull-left visible-xs visible-sm visible-md visible-lg">
 						<div id="logo-img" alt="Logo image"></div>
 					</a>
-					
+
 					<div class="navbar-brand">
 						<a href="index.html"><h1>Osteopathie-Delft</h1><a>
 												<p>Peter Rekveldt</p>
 					</div>
-					
+
 					<!-- Collapsable navigation button seen on small devices only -->
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
 						<span class="sr-only">Toggle navigation</span>
@@ -32,12 +32,12 @@
 						<span class="icon-bar"></span>
 					</button>
 				</div>
-			
+
 
 				<div id="collapsable-nav" class="collapse navbar-collapse">
 					<ul id="nav-list" class="nav navbar-nav navbar-right">
 						<!-- Extra custom ID="homeButtonNav" to counter height from added <a> element, which is added by Bootrspa automatically -->
-						<li style="margin-top:-32px;" class="active" id="homeButtonNav" >
+						<li class="active" id="homeButtonNav" >
 							<a  href="index.html">
 							<br class="hidden-xs"> Home</a>
 						</li>
@@ -46,14 +46,13 @@
 							<br class="hidden-xs"> Over</a>
 						</li>
 						<li>
-							<a href="prijzen.html">
-							<br class="hidden-xs"> Prijzen</a>
+							<a href="tarieven.html">
+							<br class="hidden-xs">Tarieven</a>
 						</li>
 						<li>
 							<a href="contact.html">
 							<br class="hidden-xs"> Contact</a>
 						</li>
-
 					</ul>
 				</div>
 			</div>
@@ -61,52 +60,87 @@
 
 	<!-- ************** Main content ************** -->
 	<!-- Pagina section beknopte uitleg osteopathie en aantrekkelijke landing -->
-	<section id="page1">
+	<section id="home-page-content" class="main-content">
+		<img class="img-responsive visible-xs" src="images\background768.jpg" width="100%">
 		<div class="container">
-			<section class="jumbotron">
-				<div class="col-md-3"></div>
-				<div class="osteoshort col-md-6">
-					<content>	
-						<h1>Osteopathie</h1>
-						<p>
-							Osteopathie verhelpt de volgende klachten:
-						</p>
+			<section>
+				<div class="col-md-2"></div>
+				<div class="osteoshort col-md-8">
+					<article>
+						<h1>Osteopathie-Delft</h1>
+						<p>Hallo, mijn naam is Peter Rekveldt en ik ben osteopaat in Delft. </p>
+						<p>De klachten die ik regelmatig zie in de praktijk zijn:</p>
 						<ul>
-							<li>Rugklachten</li>
-							<li>Nekklachten</li>
-							<li>Darmproblemen</li>
-							<li>Voet</li>
+							<li>Chronische klachten aan schouders knieën of andere gewrichten die maar niet overgaan</li>
+							<li>Pijnklachten in de rug of de nek</li>
+							<li>Buikklachten, verteringsproblemen of maagklachten  </li>
+							<li>pijnklachten in de rug of de buik tijdens zwangerschap of na een bevalling</li>
+							<li>Migraine</li>
 						</ul>
-						<p>Hoi! Ik ben Peter Rekveldt, neem contact met me op via telefoonummer: <br>06 - 212 270 10 <br> of <a href="#">klik hier</a> voor het contactformulier en ik neem 	contact met je op.
-						</p>
-					</content>
+						<p>Tevens ben ik <strong>gespecialiseerd in de behandeling van baby’s en kleine kinderen</strong>.</p>
+						<p>Neem contact met mij op via telefoonnummer <span class="no-wrap" style="font-weight: bold;">015 2131993</span>
+							of mobiel<span class="no-wrap" style="font-weight: bold;"> 0621227010</span>,
+							of stuur een Email naar <span class="no-wrap" style="font-weight: bold;">info@osteopathie-delft.nl</span></p>
+					</article>
+
 				</div>
-				<div class="col-md-3"></div>
-			</section>			
+				<div class="col-md-2"></div>
+			</section>
 		</div>
 	</section>
+
+
+	<!-- Downloads verwijderd uit de content
+						<article class="col-xs-6">
+							<button>
+								<a class="download" href="downloads/Intake-formulier-kinderen-Osteopathie-Delft.pdf" download>
+									Intake formulier voor kinderen
+								</a>
+							</button>
+						</article>
+						<article class="col-xs-6">
+							<button>
+								<a class="download" href="downloads/Intake-formulier-volwassenen-Osteopathie-Delft.pdf" download>
+									Intake formulier voor volwassenen
+								</a>
+							</button>
+						</article>
+					-->
+
+
 
 	<!-- Pagina section voor iets uitgebreidere uitleg over osteopathie -->
-	<!--
-	<section id="page2">
+	<section id="reroute" class="main-content">
 		<div class="container">
 				<div class="row">
-					<section class="col-sm-4">
-
+					<section class="reroute col-sm-4">
+					<hr class="visible-xs">
+					<h3>Wat is osteopathie?</h3>
+					<p>
+						Ostepathie is goed voor allerlei zaken. Wil jij weten of ik iets voor jou kan doen?
+					</p>
+					<a class="btn btn-primary" href="over.html" role="button">Over osteopathie</a>
 					<hr class="visible-xs">
 					</section>
-					<section class="col-sm-4">
 
+					<section class="reroute col-sm-4">
+					<h3>Tarieven en vergoedingen</h3>
+					<p>
+						Meer informatie over mijn tarieven en de vergoedingen?
+					</p>
+					<a class="btn btn-primary" href="tarieven.html" role="button">Tarieven</a>
 					<hr class="visible-xs">
 					</section>
-					<section class="col-sm-4">
 
-					<hr class="visible-xs">
+					<section class="reroute col-sm-4">
+					<h3>Contact en routebeschrijving</h3>
+						<p>Als je vragen hebt, wilt weten waar mijn praktijk is of eens een gesprek wilt kijk dan op mijn contactpagina.</p>
+						<a class="btn btn-primary" href="contact.html" role="button">Contact</a>
 					</section>
-				</div>		
+				</div>
 		</div>
 	</section>
-	-->
+
 
 
 	<!-- Pagina section voor contactformulier -->
@@ -115,56 +149,65 @@
 		<div class="container">
 			<section class="contact-form">
 
-			</section>		
+			</section>
 		</div>
 	</section>
-	-->
-
+-->
 	<!-- ************** Footer ************** -->
 	<footer class="panel-footer">
 		<div class="container">
 			<div class="row">
-				<section id="address" class="col-sm-3">
-					<strong>Contactgegevens:</strong><br>
+				<address class="col-sm-3">
+					<strong>Contactgegevens</strong><br>
+					<br>
 					Beukenlaan 4h<br>
 					2611 VC, Delft<br>
-					Tel: 06 - 212 270 10<br>
+					T: 06 - 212270410<br>
+					M: info@osteopathie-delft.nl<br>
 					<hr class="visible-xs">
-				</section>
+				</address>
 				<section id="links" class="col-sm-3">
-					<strong>Links:</strong>
+					<strong>Links</strong>
+					<br><br>
 					<ul>
 						<li>
 							<a href="http://integraalmedischcentrum.nl/">IMC-Amsterdam</a>
 						</li>
 						<li>
-							<a href="http://www.osteopathie.nl/content/welkom">NVO</a>
-						</li>
-						<li>
-							<a href="http://www.embryo.nl/">Embryo.nl</a>
+							<a href="http://www.osteopathie.nl/content/welkom">NVO </a>
 						</li>
 					</ul>
 					<hr class="visible-xs">
 				</section>
 				<section id="" class="col-sm-3">
-					<strong>Lorem ipsum</strong>
-					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
-					<p>sed quia consequuntur magni dolores</p>
-				</section>	
+					<strong>Downloads</strong>
+					<br><br>
+					<ul>
+							<li>
+								<a href="downloads/Intake-formulier-kinderen-Osteopathie-Delft.pdf" download>Intake formulier kinderen
+								</a>
+							</li>
+							<li>
+								<a href="downloads/Intake-formulier-volwassenen-Osteopathie-Delft.pdf" download>Intake formulier volwassenen
+								</a>
+							</li>
+						</ul>
+					<hr class="visible-xs">
+				</section>
 				<section id="developer-credit" class="col-sm-3">
-					<strong>Lorem ipsum</strong>
-					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
-					<p>sed quia consequuntur magni dolores</p>
+					<strong>Developer/designer</strong>
+					<br><br>
+					Heidema Web
 				</section>
 			</div>
 			<div id="credits" class="text-center">&copy; Peter Rekveldt 2016 | Osteopathie Delft
-				
+
 			</div>
 		</div>
 	</footer>
 
 
- 
+
 	<!-- jQuery (Bootstrap v 3.3.7 JS plugins depend on it) -->
 	<script src="js/jquery-3.1.0.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>

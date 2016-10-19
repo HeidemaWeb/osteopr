@@ -10,20 +10,20 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
-	<!-- Header scetion -->
-	<header>
-		<nav id="header-nav" class="navbar navbar-default">
+	<!-- Header section -->
+	<header class="navbar-fixed-top">
+		<nav id="header-nav" class="navbar navbar-default ">
 			<div class="container">
 				<div class="navbar-header">
-					<a href="index.html" class="pull-left visible-md visible-lg">
+					<a href="index.html" class="pull-left visible-xs visible-sm visible-md visible-lg">
 						<div id="logo-img" alt="Logo image"></div>
 					</a>
-					
+
 					<div class="navbar-brand">
-						<a href="index.html"><h1>Osteopathie-Delft</h1>
-												<p>Peter Rekveldt</p><a>
+						<a href="index.html"><h1>Osteopathie-Delft</h1><a>
+												<p>Peter Rekveldt</p>
 					</div>
-					
+
 					<!-- Collapsable navigation button seen on small devices only -->
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
 						<span class="sr-only">Toggle navigation</span>
@@ -33,10 +33,11 @@
 					</button>
 				</div>
 
+
 				<div id="collapsable-nav" class="collapse navbar-collapse">
 					<ul id="nav-list" class="nav navbar-nav navbar-right">
 						<!-- Extra custom ID="homeButtonNav" to counter height from added <a> element, which is added by Bootrspa automatically -->
-						<li id="homeButtonNav" >
+						<li  id="homeButtonNav" >
 							<a  href="index.html">
 							<br class="hidden-xs"> Home</a>
 						</li>
@@ -44,35 +45,50 @@
 							<a href="over.html">
 							<br class="hidden-xs"> Over</a>
 						</li>
-						<li>
-							<a href="prijzen.html">
-							<br class="hidden-xs"> Prijzen</a>
+						<li >
+							<a href="tarieven.html">
+							<br class="hidden-xs">Tarieven</a>
 						</li>
-						<li class="active" >
+						<li class="active">
 							<a href="contact.html">
 							<br class="hidden-xs"> Contact</a>
 						</li>
-
 					</ul>
-				</div>	
-
+				</div>
 			</div>
 	</header>
 
 	<!-- ************** Main content ************** -->
-	<div id="main-content" class="container">
-		<div class="jumbotron">
-			<img src="images/osteopathie/background768.jpg" alt="picture for website" class="img-responsive visible-xs">
-		</div>
+	<div id="page-contact" class="main-content">
+		<img class="img-responsive visible-xs" src="images\background-contact-768.jpg" width="100%">
+		<div class="container">
+			<div class="col-xs-12">
+			<h1>Contactformulier</h3>
+			</div>
 
-		<div id="">
-			
-		</div>
+			<div class="col-md-3"></div>
+			<div class="col-md-6">
+				<section>
 
-		<div id="contact-form">
-			
+					<form method="POST" action="http://formspree.io/volkerheidema@gmail.com">
+					  <input type="text" name="firstname" placeholder="Naam"><br>
+					  <input name="email" placeholder="Jouw email" type="email"><br>
+						<input class="berichtInvoer" type="text" placeholder="Voer hier een kort bericht in..."><br>
+					  <button class="btn btn-primary" type="button" style="float: right" type="submit">Verstuur</button>
+					</form>
+				</section>
+
+			</div>
+			<div class="col-md-3"></div>
+			<div class="col-xs-12">
+			<section>
+				<h1 style="margin-left: 15px;">Locatie Osteopathie-Delft</h1>
+				<div id="map"></div>
+			</section>
+		</div>
 		</div>
 	</div>
+
 
 
 
@@ -81,46 +97,64 @@
 	<footer class="panel-footer">
 		<div class="container">
 			<div class="row">
-				<section id="address" class="col-sm-4">
-					<strong>Contactgegevens:</strong><br>
+				<address class="col-sm-3">
+					<strong>Contactgegevens</strong><br>
+					<br>
 					Beukenlaan 4h<br>
 					2611 VC, Delft<br>
-					Tel: 06 - 212 270 10<br>
+					T: 06 - 212270410<br>
+					M: info@osteopathie-delft.nl<br>
 					<hr class="visible-xs">
-				</section>
-				<section id="links" class="col-sm-4">
-					<strong>Links:</strong>
+				</address>
+				<section id="links" class="col-sm-3">
+					<strong>Links</strong>
+					<br><br>
 					<ul>
 						<li>
 							<a href="http://integraalmedischcentrum.nl/">IMC-Amsterdam</a>
 						</li>
 						<li>
-							<a href="http://www.osteopathie.nl/content/welkom">NVO</a>
-						</li>
-						<li>
-							<a href="http://www.embryo.nl/">Embryo.nl</a>
+							<a href="http://www.osteopathie.nl/content/welkom">NVO </a>
 						</li>
 					</ul>
 					<hr class="visible-xs">
 				</section>
-					
-				<section id="developer-credit" class="col-sm-4">
-					<strong>Lorem ipsum</strong>
-					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
-					<p>sed quia consequuntur magni dolores</p>
+				<section id="" class="col-sm-3">
+					<strong>Downloads</strong>
+					<br><br>
+					<ul>
+							<li>
+								<a href="downloads/Intake-formulier-kinderen-Osteopathie-Delft.pdf" download>Intake formulier kinderen
+								</a>
+							</li>
+							<li>
+								<a href="downloads/Intake-formulier-volwassenen-Osteopathie-Delft.pdf" download>Intake formulier volwassenen
+								</a>
+							</li>
+						</ul>
+					<hr class="visible-xs">
+				</section>
+				<section id="developer-credit" class="col-sm-3">
+					<strong>Developer/designer</strong>
+					<br><br>
+					Heidema Web
 				</section>
 			</div>
 			<div id="credits" class="text-center">&copy; Peter Rekveldt 2016 | Osteopathie Delft
-				
+
 			</div>
 		</div>
 	</footer>
 
 
- 
+
 	<!-- jQuery (Bootstrap v 3.3.7 JS plugins depend on it) -->
 	<script src="js/jquery-3.1.0.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/script.js"></script>
+
+	<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+
+
 </body>
 </html>
